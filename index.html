@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Email Form</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<form onsubmit="sendEmail(); reset(); return false">
+				<h3>GET IN TOUCH</h3>
+				<input type="text" id="name" placeholder="Your Name" required>
+				<input type="email" id="email" placeholder="Email Id" required>
+				<input type="text" id="phone" placeholder="Phone No." required>
+				<textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+		
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
